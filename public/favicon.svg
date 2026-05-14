@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="本色丽人">
+  <rect width="64" height="64" fill="#1b1714"/>
+  <rect x="9" y="9" width="46" height="46" fill="none" stroke="#c8a86a" stroke-width="2"/>
+  <text x="32" y="39" text-anchor="middle" font-family="serif" font-size="25" fill="#c8a86a">本</text>
+</svg>

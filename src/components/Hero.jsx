@@ -1,8 +1,13 @@
 export default function Hero({ content }) {
+  const [titleLead, titleRest] = content.title.split('，');
+
   return (
     <section className="hero-section" id="top">
       <div className="hero-copy">
-        <h1>{content.title}</h1>
+        <h1 aria-label={content.title}>
+          <span>{titleLead}，</span>
+          <span>{titleRest}</span>
+        </h1>
         <p>{content.description}</p>
         <div className="hero-actions">
           <a className="button button-primary" href="#contact">
@@ -13,19 +18,12 @@ export default function Hero({ content }) {
           </a>
         </div>
       </div>
-      <div className="hero-visual" aria-label="本色丽人护肤产品视觉">
-        <div className="texture-orbit" aria-hidden="true" />
-        <div className="product-still-life" aria-hidden="true">
-          <div className="product-bottle">
-            <span>本色丽人</span>
-          </div>
-          <div className="product-jar">
-            <span>Repair Cream</span>
-          </div>
-          <div className="product-tube">
-            <span>Skin Serum</span>
-          </div>
-        </div>
+      <div className="hero-visual">
+        <img
+          alt="本色丽人高端护肤产品静物"
+          className="hero-product-image"
+          src="./images/hero-product-still-life.png"
+        />
       </div>
     </section>
   );
